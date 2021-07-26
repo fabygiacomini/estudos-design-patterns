@@ -11,9 +11,9 @@ abstract class TemplateDeImpostoCondicional implements ImpostoInterface
         return $this->taxacaoMinima($orcamento);
     }
 
-    public abstract function deveUsarOMaximo(Orcamento $orcamento);
+    protected abstract function deveUsarOMaximo(Orcamento $orcamento);
 
-    public abstract function taxacaoMinima(Orcamento $orcamento);
+    protected abstract function taxacaoMinima(Orcamento $orcamento);
 
-    public abstract function taxacaoMaxima(Orcamento $orcamento);
+    protected abstract function taxacaoMaxima(Orcamento $orcamento);
 }
